@@ -1,7 +1,8 @@
+import { Button } from 'primereact/button';
 const Home = () => {
   return (
     <div>
-      Home page!
+      <Button label='Primary' />
     </div>
   );
 };
