@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Roboto } from "next/font/google";
-import "tw-elements-react/dist/css/tw-elements-react.min.css";
 import './globals.css';
 
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
