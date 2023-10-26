@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
-import { Roboto } from "next/font/google";
 import './globals.css';
-
-const roboto = Roboto({ weight: "400", subsets: ["latin"] });
+import { Providers } from './providers';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +13,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={roboto.className}>{children}</body>
+    <html lang="en" className='light'>
+      <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+
+      </head>
+      <body className='light text-foreground bg-backgroumd'>
+        <Providers>
+          { children }
+        </Providers>
+      </body>
     </html>
   )
 }
