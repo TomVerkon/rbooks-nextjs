@@ -26,6 +26,10 @@ LEGACY PROJECT.
     
     workspaces/nextjs/rbooks-archive/our-books
 
+DATABASE
+
+    mongodb://localhost:27017/ourbooks books collection
+
 GITHUB REPO
 
     TomVerkon/rbooks-nextjs

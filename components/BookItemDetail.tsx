@@ -1,16 +1,15 @@
+import { Series } from '@/data';
 import React from 'react'
 
-function BookItemDetail(bookItem: any) {
-  let ret = null;
-  const series = bookItem.series;
-  const getDetails = (series: any) => {
-    if (series) {
-      ret = series.title;
-      if (series.b)
-    }
-  }
+interface Props {
+  series: Series;
+}
+
+function BookItemDetail({series}: Props) {
+  let details = series.name;
+  !series.bookInSeries ? details : details.concat(' Book ', series.bookInSeries);
   return (
-    <div>BookItemDetail</div>
+    <p>{details}</p>
   )
 }
 

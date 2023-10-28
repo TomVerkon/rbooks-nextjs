@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Providers } from './providers';
+import "reflect-metadata"
 
 export const metadata: Metadata = {
   title: 'Create Next App',

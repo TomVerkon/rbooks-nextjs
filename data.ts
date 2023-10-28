@@ -28,7 +28,7 @@ export interface Book {
 };
 
 
-export const data = [{
+export const data: Book[] = [{
   "_id": {
     "$oid": "63c096da73a6762cfe4393c0"
   },
@@ -99,4 +99,5 @@ export const data = [{
     "$date": "2023-01-12T23:25:13.872Z"
   },
   "_class": "com.digits.rbooks.models.Book"
-    }]
+  }
+];
