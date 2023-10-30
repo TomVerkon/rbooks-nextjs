@@ -1,7 +1,7 @@
-import { AppDataSource } from '@/utils/app-datasource';
+import dbConnect from '@/lib/connect-db';
 import { NextApiRequest, NextApiResponse } from 'next';
-import { Book } from '../../../entities/book';
-import { ResponseFuncs } from '../../../utils/types';
+import { Book } from '../../../models/book';
+import { ResponseFuncs } from '../../../lib/types';
 
 export default async function handler(
   req: NextApiRequest,

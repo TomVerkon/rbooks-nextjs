@@ -3,14 +3,14 @@ export interface Series {
     bookInSeries?: string;
   }
 export interface Book {
-  _id: {
-    $oid: string;
-  };
+  id: string;
+  
   version: {
     $numberLong: string;
   };
   title: string;
   titleLine: string;
+  description?: string;
   authors: string;
   series?: Series;
   type: string;
@@ -29,9 +29,7 @@ export interface Book {
 
 
 export const data: Book[] = [{
-  "_id": {
-    "$oid": "63c096da73a6762cfe4393c0"
-  },
+  "id": "63c096da73a6762cfe4393c0",
   "version": {
     "$numberLong": "0"
   },
@@ -55,9 +53,7 @@ export const data: Book[] = [{
   },
   "_class": "com.digits.rbooks.models.Book"
 },{
-  "_id": {
-    "$oid": "63c096da73a6762cfe4393c1"
-  },
+  "id": "63c096da73a6762cfe4393c1",
   "version": {
     "$numberLong": "0"
   },
@@ -78,9 +74,7 @@ export const data: Book[] = [{
   },
   "_class": "com.digits.rbooks.models.Book"
 },{
-  "_id": {
-    "$oid": "63c096da73a6762cfe4393c2"
-  },
+  "id": "63c096da73a6762cfe4393c2",
   "version": {
     "$numberLong": "0"
   },

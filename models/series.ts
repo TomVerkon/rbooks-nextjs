@@ -1,9 +1,9 @@
-import { Column } from 'typeorm';
+import { prop } from "@typegoose/typegoose";
 
 export class Series {
-  @Column()
+  @prop()
   name!: string;
 
-  @Column()
+  @prop()
   bookInSeries?: number;
 }

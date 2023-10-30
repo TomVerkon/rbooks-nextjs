@@ -1,12 +1,12 @@
-import { Column } from 'typeorm';
+import { prop } from "@typegoose/typegoose";
 
 export class Reader {
-  @Column()
+  @prop()
   name!: string;
 
-  @Column()
+  @prop()
   finished!: boolean;
 
-  @Column()
+  @prop()
   rating!: number;
 }

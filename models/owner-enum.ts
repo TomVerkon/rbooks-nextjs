@@ -1,4 +1,4 @@
 export enum Owner {
   TVERKON = 'tverkon',
-  DVERKON = 'dverkon'
+  DVERKON = 'dverkon',
 }
